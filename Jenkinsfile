@@ -37,6 +37,7 @@ pipeline {
       steps {
         echo "Performing maven build"
         sh 'mvn -B -DskipTests clean package'
+	sh 'pip install -r requirements.txt'
       }
     }
      stage('Nexus LC CLI Evaluation') {
