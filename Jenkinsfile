@@ -29,7 +29,7 @@ pipeline {
       // Get some code from a GitHub repository
 	steps {
 	echo "Begin checkout"
-        git (url: 'https://github.com/IrinaTishelman/WebGoat-81.git', credentialsId: 'IrinaTishelman-GitHub', branch: 'main')
+        git (url: 'https://github.com/irinatish/MultiLanguage.git', credentialsId: 'IrinaTishelman-GitHub', branch: 'main')
 	echo "End checkout"
       }
     }
@@ -45,16 +45,16 @@ pipeline {
 	catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
 	       {
 	echo "Scan with Sonatype Nexus Lifecycle CLI"
-	echo "java -jar ${env.IQ_PATH} -s ${env.IQ_URL} -a ${env.IQ_USER}:${env.IQ_PWD} -c -t release -i WebGoat81-Jenkins-CLI ."
+	echo "java -jar ${env.IQ_PATH} -s ${env.IQ_URL} -a ${env.IQ_USER}:${env.IQ_PWD} -c -t build -i MultiLanguage-Jenkins-CLI ."
       
-	sh "java -jar ${env.IQ_PATH} -s ${env.IQ_URL} -a ${env.IQ_USER}:${env.IQ_PWD} -c -t release -i WebGoat81-Jenkins-CLI ."
+	sh "java -jar ${env.IQ_PATH} -s ${env.IQ_URL} -a ${env.IQ_USER}:${env.IQ_PWD} -c -t build -i MultiLanguage-Jenkins-CLI ."
     		}
 	    
       }
     }
     stage('Nexus Lifecycle Evaluation') {
       steps {
-        nexusPolicyEvaluation failBuildOnNetworkError: false, iqApplication: "WebGoat81-Jenkins-pipeline", iqStage: 'build', jobCredentialsId: ''
+        nexusPolicyEvaluation failBuildOnNetworkError: false, iqApplication: "MultiLanguage-Jenkins-pipeline", iqStage: 'build', jobCredentialsId: ''
       }
     }
     
