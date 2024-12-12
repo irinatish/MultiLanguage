@@ -2,7 +2,7 @@ pipeline {
   agent any
     tools {
         maven "Maven"
-        jdk "JDK11"
+        jdk "JDK17"
     }
       environment{
 		  IQ_PATH = "/opt/sonatype/iq-184/nexus-iq-cli-1.184.0-01.jar"
