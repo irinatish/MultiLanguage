@@ -1,17 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.apache.struts</groupId>
-        <artifactId>struts2-apps</artifactId>
-        <version>2.5.10</version>
-    </parent>
 
-    <artifactId>jpmc-examples</artifactId>
+    <groupId>sonatype</groupId>
+    <artifactId>test</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <version>1.0.0</version>
-    <name>JPMC Examples</name>
-    <description>Test Cases</description>
+
+    <name>sonatype</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!-- Logging -->
@@ -23,7 +47,7 @@
 
         <dependency>
             <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-apps</artifactId>
+            <artifactId>struts2-core</artifactId>
             <version>2.5.10</version>
         </dependency>
         <dependency>
@@ -53,6 +77,11 @@
             <artifactId>richfaces-core</artifactId>
             <version>4.5.17.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.url</groupId>
+            <artifactId>pax-url-aether</artifactId>
+            <version>2.6.11</version>
+        </dependency>
 
         <dependency>
             <groupId>commons-fileupload</groupId>
@@ -76,43 +105,4 @@
             <version>1.8.0.7</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>jpmc-examples</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>8.1.16.v20140903</version>
-                <configuration>
-                    <stopKey>CTRL+C</stopKey>
-                    <stopPort>8999</stopPort>
-                    <systemProperties>
-                        <systemProperty>
-                            <name>xwork.loggerFactory</name>
-                            <value>com.opensymphony.xwork2.util.logging.log4j2.Log4j2LoggerFactory</value>
-                        </systemProperty>
-                    </systemProperties>
-                    <scanIntervalSeconds>10</scanIntervalSeconds>
-                    <webAppSourceDirectory>${basedir}/src/main/webapp/</webAppSourceDirectory>
-                    <webAppConfig>
-                        <contextPath>/struts2-rest-showcase</contextPath>
-                        <descriptor>${basedir}/src/main/webapp/WEB-INF/web.xml</descriptor>
-                    </webAppConfig>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>it/**</exclude>
-                        <exclude>**/*$*</exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 </project>
