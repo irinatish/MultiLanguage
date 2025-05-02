@@ -86,9 +86,9 @@
             <version>3.38.0.1</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.karaf</groupId>
-            <artifactId>apache-karaf</artifactId>
-            <version>4.2.0</version>
+            <groupId>org.ops4j.pax.logging</groupId>
+            <artifactId>pax-logging-log4j2</artifactId>
+            <version>2.0.7</version>
         </dependency>
         <dependency>
             <groupId>commons-fileupload</groupId>
