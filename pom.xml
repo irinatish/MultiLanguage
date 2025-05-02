@@ -81,11 +81,16 @@
             <version>2.6.7</version>
         </dependency>
         <dependency>
-        <dependency>
             <groupId>ai.h2o</groupId>
-            <artifact1.5o-web</artifactId>
+            <artifactId>h2o-web</artifactId>
             <version>3.38.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.karaf</groupId>
+            <artifactId>apache-karaf</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+        <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
             <version>1.2.1</version>
