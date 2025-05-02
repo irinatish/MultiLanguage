@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "Unsupported package manager pip3.Here are our supported package managers:\n  - rubygems (RubyGems),\n  - npm (npm),\n  - yarn (Yarn),\n  - pnpm (pnpm),\n  - maven (Maven),\n  - pip (pip),\n  - sbt (SBT),\n  - gradle (Gradle),\n  - golangdep (dep (Go)),\n  - gomodules (Go Modules),\n  - govendor (govendor),\n  - nuget (NuGet),\n  - paket (Paket),\n  - composer (Composer),\n  - cocoapods (CocoaPods),\n  - poetry (Poetry),\n  - hex (Hex),\n  - Unmanaged (C/C++) (Unmanaged (C/C++)),\n  - swift (Swift)\n        ",
+  "path": "/opt/repo/multi-language/MultiLanguage"
+}

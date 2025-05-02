@@ -1,0 +1,125 @@
+
+Testing /opt/repo/multi-language/MultiLanguage...
+
+Tested 37 dependencies for known issues, found 41 issues, 41 vulnerable paths.
+
+
+Issues to fix by upgrading:
+
+  Upgrade com.h2database:h2@1.4.187 to com.h2database:h2@2.1.210 to fix
+  ✗ Insecure Permissions [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-3009896] in com.h2database:h2@1.4.187
+    introduced by com.h2database:h2@1.4.187
+  ✗ Remote Code Execution (RCE) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-2331071] in com.h2database:h2@1.4.187
+    introduced by com.h2database:h2@1.4.187
+  ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-2348247] in com.h2database:h2@1.4.187
+    introduced by com.h2database:h2@1.4.187
+
+  Upgrade commons-collections:commons-collections@3.1 to commons-collections:commons-collections@3.2.2 to fix
+  ✗ Deserialization of Untrusted Data [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSCOLLECTIONS-472711] in commons-collections:commons-collections@3.1
+    introduced by commons-collections:commons-collections@3.1
+  ✗ Deserialization of Untrusted Data [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSCOLLECTIONS-30078] in commons-collections:commons-collections@3.1
+    introduced by commons-collections:commons-collections@3.1
+  ✗ Deserialization of Untrusted Data [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSCOLLECTIONS-6056408] in commons-collections:commons-collections@3.1
+    introduced by commons-collections:commons-collections@3.1
+
+  Upgrade commons-fileupload:commons-fileupload@1.2.1 to commons-fileupload:commons-fileupload@1.5 to fix
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-3326457] in commons-fileupload:commons-fileupload@1.2.1
+    introduced by commons-fileupload:commons-fileupload@1.2.1
+  ✗ Information Exposure [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-31540] in commons-fileupload:commons-fileupload@1.2.1
+    introduced by commons-fileupload:commons-fileupload@1.2.1
+  ✗ Time of Check Time of Use (TOCTOU) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-30079] in commons-fileupload:commons-fileupload@1.2.1
+    introduced by commons-fileupload:commons-fileupload@1.2.1
+  ✗ Arbitrary File Write [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-30080] in commons-fileupload:commons-fileupload@1.2.1
+    introduced by commons-fileupload:commons-fileupload@1.2.1
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-30081] in commons-fileupload:commons-fileupload@1.2.1
+    introduced by commons-fileupload:commons-fileupload@1.2.1
+  ✗ Arbitrary Code Execution [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-30401] in commons-fileupload:commons-fileupload@1.2.1
+    introduced by commons-fileupload:commons-fileupload@1.2.1
+
+  Upgrade commons-io:commons-io@1.4 to commons-io:commons-io@2.7 to fix
+  ✗ Directory Traversal [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMMONSIO-1277109] in commons-io:commons-io@1.4
+    introduced by commons-io:commons-io@1.4
+
+  Upgrade org.apache.logging.log4j:log4j-core@2.15.0 to org.apache.logging.log4j:log4j-core@2.17.1 to fix
+  ✗ Arbitrary Code Execution [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2327339] in org.apache.logging.log4j:log4j-core@2.15.0
+    introduced by org.apache.logging.log4j:log4j-core@2.15.0
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2321524] in org.apache.logging.log4j:log4j-core@2.15.0
+    introduced by org.apache.logging.log4j:log4j-core@2.15.0
+  ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2320014] in org.apache.logging.log4j:log4j-core@2.15.0
+    introduced by org.apache.logging.log4j:log4j-core@2.15.0
+
+  Upgrade org.apache.struts:struts2-core@2.5.10 to org.apache.struts:struts2-core@2.5.33 to fix
+  ✗ Denial of Service [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-6100744] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Allocation of Resources Without Limits or Throttling [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-5707101] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-31601] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-30779] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-31499] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Allocation of Resources Without Limits or Throttling [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-5707102] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Remote Code Execution (RCE) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-2635340] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Server-side Template Injection (SSTI) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGFREEMARKER-1076795] in org.freemarker:freemarker@2.3.23
+    introduced by org.apache.struts:struts2-core@2.5.10 > org.freemarker:freemarker@2.3.23
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-608098] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Remote Code Execution [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-32477] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Arbitrary Command Execution [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-31495] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-31501] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-31502] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-31500] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-6102825] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-1049003] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-608097] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Arbitrary Code Execution [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-31503] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  ✗ Arbitrary Code Execution [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-30207] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+
+  Upgrade org.jruby:jruby@9.1.17.0 to org.jruby:jruby@9.2.20.0 to fix
+  ✗ Use After Free [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMGITHUBJNR-1570422] in com.github.jnr:jnr-posix@3.0.44
+    introduced by org.jruby:jruby@9.1.17.0 > org.jruby:jruby-core@9.1.17.0 > com.github.jnr:jnr-posix@3.0.44
+
+
+Issues with no direct upgrade or patch:
+  ✗ Information Disclosure [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMGOOGLEGUAVA-1015415] in com.google.guava:guava@19.0
+    introduced by org.richfaces:richfaces-core@4.5.17.Final > com.google.guava:guava@19.0
+  This issue was fixed in versions: 30.0-android, 30.0-jre
+  ✗ Deserialization of Untrusted Data [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMGOOGLEGUAVA-32236] in com.google.guava:guava@19.0
+    introduced by org.richfaces:richfaces-core@4.5.17.Final > com.google.guava:guava@19.0
+  This issue was fixed in versions: 24.1.1, 24.1.1-jre
+  ✗ Creation of Temporary File in Directory with Insecure Permissions [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMGOOGLEGUAVA-5710356] in com.google.guava:guava@19.0
+    introduced by org.richfaces:richfaces-core@4.5.17.Final > com.google.guava:guava@19.0
+  This issue was fixed in versions: 32.0.0-android, 32.0.0-jre
+  ✗ Remote Code Execution (RCE) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-31685] in com.h2database:h2@1.4.187
+    introduced by com.h2database:h2@1.4.187
+  No upgrade or patch available
+  ✗ Remote Code Execution (RCE) [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHESTRUTS-8496612] in org.apache.struts:struts2-core@2.5.10
+    introduced by org.apache.struts:struts2-core@2.5.10
+  This issue was fixed in versions: 7.0.0
+
+
+
+Organization:      irinatish
+Package manager:   maven
+Target file:       pom.xml
+Project name:      sonatype:test
+Open source:       no
+Project path:      /opt/repo/multi-language/MultiLanguage
+Licenses:          enabled
+
+Tip: Detected Maven project, are you using modules? Use --maven-aggregate-project to scan each project. Alternatively use --all-projects to scan Maven and other types of projects.
+
+
