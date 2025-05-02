@@ -60,8 +60,7 @@
             <artifactId>h2</artifactId>
             <version>1.4.187</version>
         </dependency>
-
-        <!-- <dependency>
+        <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>2.0.4</version>
@@ -70,8 +69,7 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.0.4</version>
-        </dependency> -->
-
+        </dependency>
         <dependency>
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces-core</artifactId>
@@ -82,8 +80,12 @@
             <artifactId>pax-url-aether</artifactId>
             <version>2.6.7</version>
         </dependency>
-
         <dependency>
+        <dependency>
+            <groupId>ai.h2o</groupId>
+            <artifact1.5o-web</artifactId>
+            <version>3.38.0.1</version>
+        </dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
             <version>1.2.1</version>
